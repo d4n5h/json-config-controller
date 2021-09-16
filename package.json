@@ -1,6 +1,6 @@
 {
   "name": "json-config-controller",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Control .json files with a deep proxy",
   "main": "index.js",
   "scripts": {
