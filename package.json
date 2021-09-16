@@ -1,0 +1,33 @@
+{
+  "name": "json-config-controller",
+  "version": "1.0.0",
+  "description": "Control .json files with a deep proxy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d4n5h/json-config-controller.git"
+  },
+  "keywords": [
+    "json",
+    "config",
+    "conf",
+    "control",
+    "auto",
+    "save",
+    "automatic",
+    "proxy",
+    "deep"
+  ],
+  "author": "Daniel Shlomo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/d4n5h/json-config-controller/issues"
+  },
+  "homepage": "https://github.com/d4n5h/json-config-controller#readme",
+  "dependencies": {
+    "@danisl99/deep-proxy": "^1.0.0"
+  }
+}
