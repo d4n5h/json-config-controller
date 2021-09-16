@@ -10,7 +10,14 @@
 
 ```javascript
 const configController = require('json-config-controller');
-const config = new configController("./config.json");
+const cc = new configController("./config.json");
+
+const config = cc.data;
+
+// Create a listener for property change
+cc.on('port', (data)=>{
+    console.log(data)
+})
 
 config.port = 3000; // Will automatically be saved in the config.json file
 ```
