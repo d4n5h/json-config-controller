@@ -13,7 +13,6 @@ module.exports = class {
         const handler = {
             set: async function (obj, prop, value) {
                 obj[prop] = value;
-                that.em.emit(prop, value);
                 await that.save();
             },
             deleteProperty: async function (obj, prop) {
@@ -39,6 +38,7 @@ module.exports = class {
     async save() {
         return new Promise((resolve) => {
             fs.writeFile(this.file, JSON.stringify(this.em.data), () => {
+                this.em.emit('change', this.em.data);
                 resolve(true);
             });
         });

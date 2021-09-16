@@ -14,8 +14,7 @@ const cc = new configController("./config.json");
 
 const config = cc.data;
 
-// Create a listener for property change
-cc.on('port', (data)=>{
+cc.on('change', (data)=>{
     console.log(data)
 })
 
